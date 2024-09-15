@@ -12,6 +12,14 @@ $(document).keypress(function() {
         started = true;
     }
 });
+$(document).click(function() {
+    
+    
+    if (!started) {
+        nextSequence();
+        started = true;
+    }
+});
 
 $(".btn").click(function() {
     var userchoice = $(this).attr("id"); //Adding to the users selcted array
